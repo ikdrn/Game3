@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://r301"]
+
+[ext_resource type="Script" path="res://scenes/weapons/WeaponBase.gd" id="1"]
+
+[node name="R301" type="Node3D"]
+script = ExtResource("1")
+weapon_name = "R301"
+profile = "AR"
+magazine_size = 20
+damage = 14.0
+fire_rate = 13.0
+spread = 0.006

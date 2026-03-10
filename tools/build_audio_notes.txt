@@ -1,0 +1,15 @@
+Procedural Gunshot Notes
+=======================
+
+AudioManager.gd synthesizes gunshots with:
+1) White noise burst
+2) Exponential decay envelope
+3) Harmonic sine-frequency mix
+
+Profiles:
+- AR: duration 0.12, decay 40
+- Pistol: duration 0.15, decay 35
+- Shotgun: duration 0.25, decay 20
+- Sniper: duration 0.35, decay 15
+
+No binary audio files are used.

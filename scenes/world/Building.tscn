@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://building"]
+
+[node name="Building" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = BoxShape3D.new()
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = BoxMesh.new()
+scale = Vector3(4, 3, 4)

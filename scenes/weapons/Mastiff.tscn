@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://mastiff"]
+
+[ext_resource type="Script" path="res://scenes/weapons/WeaponBase.gd" id="1"]
+
+[node name="Mastiff" type="Node3D"]
+script = ExtResource("1")
+weapon_name = "Mastiff"
+profile = "Shotgun"
+magazine_size = 4
+damage = 96.0
+fire_rate = 1.1
+spread = 0.03

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://world"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/Building.tscn" id="1"]
+
+[node name="World" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = BoxShape3D.new()
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = BoxMesh.new()
+scale = Vector3(40, 0.5, 40)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+
+[node name="BuildingA" parent="." instance=ExtResource("1")]
+position = Vector3(8, 1.5, 8)
+
+[node name="BuildingB" parent="." instance=ExtResource("1")]
+position = Vector3(-10, 1.5, -3)

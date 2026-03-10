@@ -1,0 +1,2 @@
+This is a text placeholder artifact for environments where exporting binaries is not allowed in-repo.
+Run ./export.sh with Godot 4.3 installed to generate a real Windows executable here.

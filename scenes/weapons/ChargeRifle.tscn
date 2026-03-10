@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://charge"]
+
+[ext_resource type="Script" path="res://scenes/weapons/WeaponBase.gd" id="1"]
+
+[node name="ChargeRifle" type="Node3D"]
+script = ExtResource("1")
+weapon_name = "ChargeRifle"
+profile = "Sniper"
+magazine_size = 4
+damage = 90.0
+fire_rate = 0.8
+spread = 0.001
